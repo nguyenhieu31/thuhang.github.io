@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>8-3</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
 </head>
 <body>
+    <!-- tạo trái tim -->
     <div class="container">
         <div class="anh"></div>
             <img src="https://scontent.fdad1-2.fna.fbcdn.net/v/t1.15752-9/272909033_345825337446598_8676349386212446181_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=ae9488&_nc_ohc=uqvCuMhmMIAAX-qYKdq&_nc_ht=scontent.fdad1-2.fna&oh=03_AVJg3YN3RFlxKdOSWr9mVbu-sb75DazSEkjFiONmM0qHXw&oe=623A88D8" class="image"/>
@@ -24,11 +26,28 @@
             <span class="layers layer6" style="--i:6"></span>
         </div>
     </div>
+    <!-- tạo dòng chữ chạy -->
     <div class="chu">
         <p><i>Nay ngày 8/3, anh chúc em một ngày 8/3 vui vẻ hạnh phúc.Chúc cho những muộn phiền của em sẽ tan biến mất, chúc cho những niềm vui sẽ luôn bao quanh em.Yêu em tình yêu của anh !</i></p>
     </div>
-    <audio id="player"  controls autoplay loop>
+    <!-- tạo âm thanh -->
+    <iframe src="imlang.mp3" allow="autoplay" id="audio" style="display: none;"></iframe>
+    <audio id="player" controls autoplay loop>
         <source src="baihat.mp3" type="audio/mp3">
     </audio>
+    <!-- tạo nút bấm vào -->
+    <div class="button">
+        <i class="ti-hand-point-down">bấm vào đây nè bé!</i>
+    </div>
+    <!-- tạo điều ước đơn giản -->
+    <div class="hop-qua">
+        <div class="form">
+            <form action="https://script.google.com/macros/s/AKfycbzwNnST5i4D5P2lS6YU8W7YK6Gyo_LJu6McNa6Z8sdtPTIM-c8W_cF_BLim2xX7BfVH/exec" method="get">
+                <h1 style="color: black;;">wish</h1>
+                <textarea type="text" name="wish" id="wish" cols="40" rows="7" placeholder="em thích gì trong ngày này nào?"></textarea>
+                <input type="submit" value="Gửi" onclick="validation()">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
